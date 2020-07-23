@@ -1,11 +1,7 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  mode: 'spa',
+module.exports = {
   router: {
     base: '/symmetrica-ssr-core/'
-  }
-} : {};
-
-module.exports = {
+  },
   /*
   ** Headers of the page
   */
@@ -43,6 +39,9 @@ module.exports = {
     },
     vendor: ['axios']
   },
+  generate: {
+    fallback: true,
+  },
   axios: {
     proxy: true,
   },
@@ -54,9 +53,4 @@ module.exports = {
         }
     }
   },
-  server: {
-    host: '0.0.0.0',
-    port: '3001',
-  },
-  ...routerBase,
 }
