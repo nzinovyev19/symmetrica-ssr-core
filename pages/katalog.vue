@@ -1,22 +1,24 @@
 <template>
-  <section class="container">
-    <div>
-      <h1 class="title">
-        symmetrica-ssr-core
-      </h1>
-      <h3 class="subtitle">
-        Каталог
-      </h3>
-      <div class="catalog">
-        <div class="catalog__categories">
-          <Categories />
-        </div>
-        <div class="catalog__info">
-          <nuxt-child />
+  <main class="main">
+    <section class="container">
+      <div>
+        <h1 class="title">
+          symmetrica-ssr-core
+        </h1>
+        <h3 class="subtitle">
+          Каталог
+        </h3>
+        <div class="catalog">
+          <div class="catalog__categories">
+            <Categories />
+          </div>
+          <div class="catalog__info">
+            <nuxt-child />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -31,6 +33,10 @@ export default {
 </script>
 
 <style lang="scss">
+.main {
+  padding: 50px 0;
+}
+
 .container {
   width: 1120px;
   min-height: 100vh;

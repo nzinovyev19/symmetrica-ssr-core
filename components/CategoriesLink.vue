@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     v-if="!childrenCategories.length"
-    :to="categoryUrl"
+    :to="{ name: 'katalog-kategoriya-url', params: { url: categoryUrl } }"
     class="categories-link"
   >
     {{ category.name }}
