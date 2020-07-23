@@ -29,7 +29,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
+  width: inherit;
   height: 100%;
   margin: 0;
   padding: 10px;
