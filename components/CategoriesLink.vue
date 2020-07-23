@@ -1,7 +1,11 @@
 <template>
   <nuxt-link
     v-if="!childrenCategories.length"
-    :to="{ name: 'katalog-kategoriya-url', params: { url: categoryUrl } }"
+    :to="{
+      name: 'katalog-kategoriya-url',
+      params: { url: categoryUrl },
+      query: { parent: category.url.slice(0, category.url.lastIndexOf('/')) }
+    }"
     class="categories-link"
   >
     {{ category.name }}
