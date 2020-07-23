@@ -1,4 +1,5 @@
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  mode: 'spa',
   router: {
     base: '/symmetrica-ssr-core/'
   }
