@@ -33,36 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-.main {
-  padding: 50px 0;
-}
-
-.container {
-  width: 1120px;
-  min-height: 100vh;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 50px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 25px;
-  color: #526488;
-  word-spacing: 5px;
-}
-
 .catalog {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
