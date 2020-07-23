@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'spa',
   router: {
     base: '/symmetrica-ssr-core/'
   },
@@ -38,9 +39,6 @@ module.exports = {
       }
     },
     vendor: ['axios']
-  },
-  generate: {
-    fallback: true,
   },
   axios: {
     proxy: true,
