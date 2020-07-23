@@ -5,9 +5,7 @@
         <h1 class="title">
           symmetrica-ssr-core
         </h1>
-        <h3 class="subtitle">
-          Каталог
-        </h3>
+        <h3 class="subtitle">{{ title }}</h3>
         <div class="catalog">
           <div class="catalog__categories">
             <Categories />
@@ -28,6 +26,19 @@ import Categories from '../components/Categories.vue';
 export default {
   components: {
     Categories
+  },
+  data() {
+    return {
+      title: 'Каталог'
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'Catalog', name: 'Catalog', content: 'It is catalog of categories' }
+      ]
+    };
   },
 };
 </script>
